@@ -24,4 +24,15 @@ function evenNumbers(newArray){
 evenNumbers(array2);
 
 
-// 
+// square numbers
+
+function squareNumbers(newArray){
+    let squareArray = [];
+    // use filter function to return the original array squared
+    array2.forEach(function(num){
+        let square = num ** 2;
+        squareArray.push(square);
+    });
+    return squareArray;
+}
+squareNumbers(array2)
