@@ -11,3 +11,17 @@ function positiveNumbers(newArray){
 }
 // call the function
 positiveNumbers(array1)
+
+// take an array and return only the even numbers
+
+const array2 = [1,2,3,4,5,6];
+function evenNumbers(newArray){
+    // filter out the even numbers from the odd
+    let evenArray = array2.filter(value =>  value % 2 === 0);
+    // return new array so it cval be called by the function
+    return evenArray;
+}
+evenNumbers(array2);
+
+
+// 
