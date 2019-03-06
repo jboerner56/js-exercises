@@ -36,3 +36,59 @@ function squareNumbers(newArray){
     return squareArray;
 }
 squareNumbers(array2)
+
+// cities 1
+// return new array with only cities that have a temp lower than 70
+const cities = [
+    { name: 'Los Angeles', temperature: 60.0},
+    { name: 'Atlanta', temperature: 52.0 },
+    { name: 'Detroit', temperature: 48.0 },
+    { name: 'New York', temperature: 80.0 }
+];
+function coolCities(cool){
+    let niceCities = [];
+    console.log(cities.filter(city=> city.temperature > 70))
+}
+coolCities(cities)
+
+// cities 2
+// return the names of the cities
+
+function nameCities(city){
+// need to use map to return just the city names. filter returns everything that passes the test so it includes the temp values as well
+    let niceCities = (cities.map(name => name.name))
+    console.log(niceCities)
+}
+nameCities(cities)
+
+
+// Good Job
+// print out "Good Job, (persons name)"
+var people = [
+    'Dom',
+    'Lyn',
+    'Kirk',
+    'Autumn',
+    'Trista',
+    'Jesslyn',
+    'Kevin',
+    'John',
+    'Eli',
+    'Juan',
+    'Robert',
+    'Keyur',
+    'Jason',
+    'Che',
+    'Ben'
+];
+function goodJob(people){
+    let nameString = people.forEach(function(names){
+    console.log(`Good Job ${name}`)
+    });
+}
+goodJob(people)
+
+
+// 3 times
+// use a function to print hello world 3 times
+
