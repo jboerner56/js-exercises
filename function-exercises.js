@@ -81,8 +81,10 @@ var people = [
     'Che',
     'Ben'
 ];
-function goodJob(people){
+function goodJob(name){
+    // use for each to go thru each element and do something to them.
     let nameString = people.forEach(function(names){
+        // console.log the results while adding the string before each name.
     console.log(`Good Job ${name}`)
     });
 }
@@ -91,4 +93,14 @@ goodJob(people)
 
 // 3 times
 // use a function to print hello world 3 times
+function call3Times(fun) {
+    fun();
+    fun();
+    fun();
+}
+// can use anonymous function and console.log the string you want to repeat 3 times using the above function.
+call3Times(function(){
+    console.log("Hello World");
+});
+
 
