@@ -118,3 +118,21 @@ callNTimes(4, function(){
     console.log("Hello World")
 });
 
+// string multiply
+// write a function that will return the given string however many time is input
+
+function strMultiply(str, times){
+    // variable to return the string into
+    let multiString = "";
+    // counter to go loop through until it hits the given number of times
+    for(let i = 0; i < times; i++){
+
+    
+    // add each time through loop to the end variable string
+    multiString = multiString + str;
+    }
+    // need to return so it can be called
+    return multiString;
+}
+// to print to the console
+console.log(strMultiply('abcd', 4))
