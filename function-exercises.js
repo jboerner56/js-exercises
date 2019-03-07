@@ -103,4 +103,18 @@ call3Times(function(){
     console.log("Hello World");
 });
 
+// n times
+// same instructions as above but add the ability to print string as many times as you want
+
+function callNTimes (times, fun){
+    // counter to go through and print the string however many times is given.
+    for (let i = 0; i < times; i++){
+        fun();
+    }
+}
+// use anonymous function to print the string the given number of times.
+callNTimes(4, function(){
+    // console.log the given string
+    console.log("Hello World")
+});
 
